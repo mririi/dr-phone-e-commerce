@@ -16,7 +16,7 @@ app.use(cors())
 app.use(express.json())
 app.use("/api/user", userRoutes)
 app.use("/api/category", categoryRoutes)
-app.use("/api/product", productRoutes)
+app.use("/api/products", productRoutes)
 
 app.get('/', (req, res) => res.send('/api/user/login maybe?'))
 app.listen(port, () => console.log(`listening on port ${port}!`))
