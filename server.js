@@ -15,7 +15,7 @@ connectDB()
 app.use(cors())
 app.use(express.json())
 app.use("/api/user", userRoutes)
-app.use("/api/category", categoryRoutes)
+app.use("/api/categories", categoryRoutes)
 app.use("/api/products", productRoutes)
 
 app.get('/', (req, res) => res.send('/api/user/login maybe?'))
